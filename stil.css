@@ -1,7 +1,8 @@
 #doska_foto{width: 70%}
 header{background-color: #895129;
+       widht: 70%;
      display: flex;
-       
+       justify-content: center;
       }
 body{background-color: #f4e9ab;}
 main{background-color: #f4e9ab;}
