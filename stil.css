@@ -1,4 +1,5 @@
 #doska_foto{width: 70%}
+.zagolovok_sredniy{ text-align: center;}
 header{background-color: #895129;
        width: 70%;
      display: flex;
@@ -8,15 +9,15 @@ body{background-color: #f4e9ab;}
 main{background-color: #f4e9ab;}
 footer{background-color: #895129;}
 h1{color: #f4e9ab;
-   text-align: center;
+   
   }
 h2{color: #895129;
-  text-align: center;}
+ }
 h3{color: #895129;
-  text-align: center;}
+  }
 h4{color: #895129;
-  text-align: center;}
+  }
 h5{color: #895129;
-  text-align: center;}
+  }
 a{color: #895129;}
 p{color: #895129;}
