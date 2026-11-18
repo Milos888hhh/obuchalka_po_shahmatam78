@@ -104,7 +104,6 @@ const boardElement = document.getElementById('chessboard');
   function initBoard() {
     boardState = initialPosition.map(row => [...row]);
 
-Шива:
 selectedCell = null;
     currentTurn = 'white';
     // Сбрасываем историю ходов фигур
@@ -204,7 +203,6 @@ selectedCell = null;
         selectedCell = null;
         currentTurn = currentTurn === 'white' ? 'black' : 'white';
 
-Шива:
 statusElement.textContent = statusText + (currentTurn === 'white' ? 'Ход: Белые' : 'Ход: Черные');
         renderBoard();
       } else {
