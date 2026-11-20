@@ -28,94 +28,100 @@ p{color: #895129;}
 
 
 
-
-
-
-
-/* Стили для доски с Рокировкой!!! */
-
-
+/* Стили для доски с Рокировкой/
 .chess-widget {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 25px auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 25px auto;
 }
 
 #turn-status {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 12px;
-  padding: 10px 18px;
-  background-color: #895129;
-  color: #f4e9ab;
-  border-radius: 8px;
-  text-align: center;
-  max-width: 440px;
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 12px;
+padding: 10px 18px;
+background-color: #895129;
+color: #f4e9ab;
+border-radius: 8px;
+text-align: center;
+max-width: 440px;
 }
 
 #chessboard {
-  display: grid;
-  grid-template-columns: repeat(8, 55px);
-  grid-template-rows: repeat(8, 55px);
-  border: 6px solid #5a351a;
-  border-radius: 4px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-  user-select: none;
+display: grid;
+grid-template-columns: repeat(8, 55px);
+grid-template-rows: repeat(8, 55px);
+border: 6px solid #5a351a;
+border-radius: 4px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+user-select: none;
 }
 
 .square {
-  width: 55px;
-  height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  cursor: pointer;
-  position: relative;
+width: 55px;
+height: 55px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 40px;
+cursor: pointer;
+position: relative;
 }
 
 .square.light { background-color: #f4e9ab; }
 .square.dark { background-color: #895129; }
 
 .square.selected {
-  background-color: #76b852;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+background-color: #76b852;
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Подсветка клеток, куда король может прыгнуть при рокировке */
 .square.castling-hint::after {
-  content: '';
-  width: 18px;
-  height: 18px;
-  background-color: rgba(46, 204, 113, 0.85);
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  position: absolute;
+content: '';
+width: 18px;
+height: 18px;
+background-color: rgba(46, 204, 113, 0.85);
+border: 2px solid #ffffff;
+border-radius: 50%;
+position: absolute;
 }
 
 .white-piece {
-  color: #ffffff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 2px #000;
+color: #ffffff;
+text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 2px #000;
 }
 
 .black-piece {
-  color: #1a1a1a;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+color: #1a1a1a;
+text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
 }
 
 #reset-board-btn {
-  margin-top: 15px;
-  background-color: #895129;
-  color: #f4e9ab;
-  border: 2px solid #f4e9ab;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
+margin-top: 15px;
+background-color: #895129;
+color: #f4e9ab;
+border: 2px solid #f4e9ab;
+padding: 10px 20px;
+font-size: 16px;
+font-weight: bold;
+border-radius: 8px;
+cursor: pointer;
 }
 
 #reset-board-btn:hover {
-  background-color: #6a3e1f;
-  color: white;}
+background-color: #6a3e1f;
+color: white;
+}
+
+@media (max-width: 480px) {
+#chessboard {
+grid-template-columns: repeat(8, 40px);
+grid-template-rows: repeat(8, 40px);
+}
+.square {
+width: 40px;
+height: 40px;
+font-size: 28px;
+}
+}
