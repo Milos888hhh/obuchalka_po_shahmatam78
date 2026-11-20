@@ -20,11 +20,32 @@
   </head>
     <body>
       <header><h1 class="zagolovok_sredniy">Все для новичка по Шахматам</h1></header>
-      <main><h3>Расстановка фигур</h3>
+      <main>
+         <div class="chess-widget">
+  <div id="turn-status">Ход: Белые</div>
+
+  <div id="promo-modal" style="display: none;">
+    <span>Превратить пешку в:</span>
+    <div class="promo-buttons">
+      <button onclick="choosePromotion('q')">♛ Ферзь</button>
+      <button onclick="choosePromotion('r')">♜ Ладья</button>
+      <button onclick="choosePromotion('b')">♝ Слон</button>
+      <button onclick="choosePromotion('n')">♞ Конь</button>
+    </div>
+  </div>
+
+  <div id="chessboard"></div>
+
+  <div class="game-controls">
+    <button id="undo-btn" onclick="undoMove()">← Отменить ход</button>
+    <button id="reset-board-btn" onclick="initGame()">Новая партия</button>
+  </div>
+</div>
+         <h3>Расстановка фигур</h3>
       <p>Ниже представлена шахматная доска с начальной расстановкой</p>
         
           <img class = "foto70" src="hahmatnaya_doska.png" ALT="Шахматная доска с начальной расстановкой">
-        <p>Это фото служит лишь примером. Более подробнее можно ознакомиться в правилах ниже</p>
+        <p>Это фото служит лишь примером. Более подробнее можно ознакомиться в правилах ниже, либо на интерактивной доске, которую я предоставил Вам чутка выше. </p>
         <h2 class="zagolovok_sredniy">Правила фигур</h2>
         <ul>
           <li><h2><a href="peshka/">Правила и информация про пешку</a></h2></li>
@@ -36,5 +57,6 @@
         </ul>
       </main>
       <footer><h3 class="zagolovok_sredniy">Разработчик Влад(Милош)</h3></footer>
+       <script src="../js/igra_in_shahmati.js"></script>
     </body>
 </html>
