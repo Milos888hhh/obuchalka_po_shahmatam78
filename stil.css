@@ -17,7 +17,8 @@ header{background-color: #895129;
        top: 0;
        
       }
-body{background-image:url(fon.jpg);}
+body{background-image:url(fon.jpg);
+   border: 3px solid #895129; }
 img   {display:block;
       margin:0 auto;}
 main{background-color: #f4e9ab;
