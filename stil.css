@@ -42,6 +42,55 @@ p{color: #895129;}
 
 
 
+/* Адаптивная верстка под смартфоны и планшеты */
+@media (max-width: 768px) {
+
+body {
+margin: 0;
+font-size: 16px;
+line-height: 1.5;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+header {
+padding: 12px 10px;}
+
+header h1 {
+font-size: 22px;
+margin: 0;}
+
+main {
+width: 94%;
+max-width: 100%;
+margin: 12px auto;
+padding: 15px;}
+
+img {
+max-width: 100%;
+height: auto;}
+
+#chessboard {
+width: 92vw;
+height: 92vw;
+max-width: 440px;
+max-height: 440px;
+margin: 15px auto;}
+
+#chessboard > div {
+width: 12.5%;
+height: 12.5%;
+font-size: 8.5vw;}
+
+#ssilka {
+display: inline-block;
+width: auto;
+max-width: 90%;
+padding: 12px 20px;
+font-size: 16px;}}
+
+
 
 
 
