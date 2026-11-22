@@ -5,7 +5,8 @@
          padding: 23px;
  background-color:#f4e9ab;
          border-radius: 8px;
-         text-decoranion: none;}
+         text-decoranion: none;
+        border: 3px dashed #f4e9ab;}
 
 header{background-color: #895129;
        width: 70%;
@@ -14,7 +15,7 @@ header{background-color: #895129;
      margin:0 auto;  
        position: sticky;
        top: 0;
-       border: 3px dashed #f4e9ab;
+       
       }
 body{background-image:url(fon.jpg);}
 img   {display:block;
