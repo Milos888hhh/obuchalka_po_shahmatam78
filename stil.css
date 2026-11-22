@@ -14,7 +14,7 @@ header{background-color: #895129;
      margin:0 auto;  
        position: sticky;
        top: 0;
-       border: dashed #f4e9ab;
+       border: 3px dashed #f4e9ab;
       }
 body{background-image:url(fon.jpg);}
 img   {display:block;
