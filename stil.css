@@ -4,9 +4,9 @@
     color:#895129;
          padding: 23px;
  background-color:#f4e9ab;
-         border-radius: 8px;
+         border-radius: 38px;
          text-decoration: none;
-        border: 3px dashed #895129;}
+        border: 8px double #895129;}
 
 header{background-color: #895129;
        width: 70%;
@@ -15,15 +15,16 @@ header{background-color: #895129;
      margin:0 auto;  
        position: sticky;
        top: 0;
-       
+       border: 8px dashed #f4e9ab;
       }
 body{background-image:url(fon.jpg);
-   border: 3px solid #895129; }
+    }
 img   {display:block;
       margin:0 auto;}
 main{background-color: #f4e9ab;
      width: 78%;
-   margin:0 auto; }
+   margin:0 auto;
+    #895129;}
 footer{background-color: #895129;}
 h1{color: #f4e9ab;
   }
