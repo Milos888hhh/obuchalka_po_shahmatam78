@@ -1,10 +1,19 @@
 .foto70{width: 70%}
 .zagolovok_sredniy{ text-align: center;}
+#ssilka{display: inline-block;
+    color:#895129;
+         padding: 23px;
+ background-color:#f4e9ab;
+         border-radius: 8px;
+         text-decoranion: none;}
+
 header{background-color: #895129;
        width: 70%;
      display: flex;
        justify-content: center;
      margin:0 auto;  
+       position: sticky;
+       top: 0;
       }
 body{background-image:url(fon.jpg);}
 img   {display:block;
